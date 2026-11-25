@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>羽约</title>
+<link rel="stylesheet" href="popup.css">
+<body><header><strong>羽约</strong><span>单账号 · 一个小时</span></header>
+<form id="form"><div class="row"><label>打球日期<input id="date" type="date" required></label><label>开始时间<select id="hour"></select></label></div>
+<p id="release"></p><p id="when" class="help"></p>
+<label>联系电话<input id="phone" type="tel" required maxlength="24" autocomplete="tel"></label>
+<div class="row"><label>主题<input id="theme" value="羽毛球运动" required maxlength="200"></label><label>参与人数<input id="participants" type="number" min="1" max="6" value="2" required></label></div>
+<label>用途说明<input id="purpose" value="羽毛球日常锻炼" required maxlength="2000"></label>
+<label class="switch"><input id="test" type="checkbox" checked>只填表，停在提交前</label>
+<p class="help">场地优先级 6 → 4/5/7 → 11/12/13/14 → 3/8 → 9/10 → 1/2</p>
+<button id="start" type="submit">开始填表测试</button>
+<button id="rehearse" type="button">10 秒倒计时演练 · 只填表</button>
+<p class="help">等待期间保持日历标签页可见、电脑唤醒。关闭此弹窗后任务继续。</p></form>
+<section><div id="status" role="status"></div><pre id="events"></pre>
+<div class="tools"><button id="stop">停止</button><button id="review">核验订单</button></div>
+<button id="ack" hidden>我已核对学校订单，结束待查任务</button>
+<details><summary>页面检查</summary><button id="diagnostic">导出页面结构</button><p class="help">仅导出元素结构、时间列和场地标签；不读取输入值、Cookie 或密码。分享前仍请检查内容。</p></details></section>
+<script type="module" src="popup.js"></script></body></html>

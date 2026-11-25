@@ -1,0 +1,10 @@
+{
+  "name": "cuhksz-court-booker",
+  "version": "1.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "description": "羽约：Chrome / Edge 通用的单账号羽毛球预约助手",
+  "scripts": {"test": "node --test tests/*.mjs", "package": "python scripts/package.py"},
+  "engines": {"node": ">=22"}
+}
